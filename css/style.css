@@ -36,17 +36,18 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid tomato;
+  background-color: indianred;
 }
 
 .top-line .container {
   display: flex;
-  align-items: center;
+  padding-bottom: 94px;
 }
 
 .nav-container {
@@ -74,6 +75,7 @@ body {
 /* Site-nav */
 .site-nav {
   display: flex;
+  margin-left: 93px;
 }
 
 .site-nav .pages:not(:last-child) {
@@ -82,7 +84,6 @@ body {
 .site-nav .pages {
   outline: 2px solid tomato;
   background-color: yellow;
-  margin-left: 93px;
 }
 
 .site-nav .link {
@@ -106,6 +107,7 @@ body {
 
 .list-cont {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 .list-cont .item + .item {
@@ -134,36 +136,23 @@ body {
 }
 
 /* Hero */
-/* .hero {
+.hero {
+  color: var(--white);
   background-color: #2f303a;
   text-align: center;
-} */
-.hero-container {
-  min-width: 1600px;
-  min-height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #2f303a;
-  /* color: var(--white); */
-  text-align: center;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
 }
+
 .hero-title {
   margin-top: 0px;
-  margin-bottom: 30px;
   color: var(--white);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  /* text-align: center; */
   letter-spacing: 0.06em;
   text-transform: uppercase;
   min-width: 696px;
-  min-height: 120px;
-  /* padding: 200px 452px 280px 452px; */
 }
+
 .text-btn {
   color: var(--white);
   background-color: var(--blue);
@@ -233,15 +222,15 @@ body {
 .footer {
   background-color: #2f303a;
 }
-.footer-container {
+/* .footer-container {
   min-width: 1600px;
   min-height: 252px;
   margin-top: auto;
   margin-bottom: auto;
-}
+} */
 .footer .logo {
   display: inline-block;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .adress-list {
   font-weight: 400;
@@ -271,20 +260,18 @@ body {
   line-height: 1.6;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: block;
   border-radius: 4px;
   padding: 6px 22px 6px 22px;
   min-width: 73px;
 }
+
 .filters .position :hover,
 .filters .position :focus {
   color: var(--white);
   background-color: var(--blue);
 }
-.filters {
-  /* margin-top: 94px; */
-  margin-bottom: 34px;
-}
+
 .serv-list .service {
   color: var(--main-color);
   font-weight: 700;
@@ -293,7 +280,6 @@ body {
   letter-spacing: 0.06em;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-bottom: 4px;
 }
 .serv-list .descrip {
   color: var(--grey);
@@ -304,11 +290,14 @@ body {
 p.descrip {
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-bottom: 20px;
 }
 
 .serv-list .item {
   text-decoration: none;
+}
+
+.title {
+  padding: 20px 24px;
 }
 .visually-hidden {
   position: absolute;
@@ -329,15 +318,7 @@ p.descrip {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.features {
-  background-color: turquoise;
-}
-.services {
-  background-color: hotpink;
-}
-.features-card {
-  width: 270px;
-}
+
 .features-list {
   outline: 1px solid tomato;
   display: flex;
@@ -350,6 +331,7 @@ p.descrip {
   flex-basis: calc(100% / 4 - var(--features-list-gap));
   margin-left: var(--features-list-gap);
   margin-top: var(--features-list-gap);
+  width: 270px;
 }
 .services-list {
   outline: 1px solid tomato;
@@ -375,43 +357,62 @@ p.descrip {
   margin-left: var(--features-list-gap);
   margin-top: var(--features-list-gap);
 }
-.filters {
+/* Альтернатива */
+/* .filters {
   outline: 1px solid tomato;
   display: flex;
-  /* flex-wrap: wrap; */
   align-items: center;
   margin-left: calc(1 * var(--filters-gap));
   margin-top: calc(1 * var(--filters-gap));
+  margin-left: auto;
+  margin-right: auto;
 }
 .filters > .position {
   outline: 1px solid yellow;
   flex-basis: calc(100% / 5 - var(--filters-gap));
   margin-left: var(--filters-gap);
   margin-top: var(--filters-gap);
+} */
+
+/* Кнопки портфолио */
+.filters {
+  outline: 1px solid tomato;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 34px;
 }
+
+.filters :not(:last-child) {
+  margin-right: 8px;
+}
+/* Кнопки портфолио */
 .section .container {
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
   outline: 1px solid tomato;
 }
+/* Альтернатива
+.serv-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--features-list-gap));
+  margin-left: calc(-1 * var(--features-list-gap));
+}
+.serv-card {
+  flex-basis: calc(100% / 3 - var(--features-list-gap));
+  margin-top: var(--features-list-gap);
+  margin-left: var(--features-list-gap);} */
+
 .serv-list {
   outline: 1px solid tomato;
   display: flex;
   flex-wrap: wrap;
-  /* margin-top: calc(-1 * var(--features-list-gap));
-  margin-left: calc(-1 * var(--features-list-gap)); */
 }
 .serv-card {
   outline: 1px solid yellow;
-  /* flex-basis: calc(100% / 3 - var(--features-list-gap));
-  margin-top: var(--features-list-gap);
-  margin-left: var(--features-list-gap); */
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+  background-color: var(--white);
 }
 
 .serv-list :nth-child(3n) {
