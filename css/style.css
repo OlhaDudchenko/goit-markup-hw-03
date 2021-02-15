@@ -65,6 +65,9 @@ img {
 
 /* ................................................. */
 /* .......................ХЕДЕР......................... */
+.main {
+  border: 1px solid #ececec;
+}
 .top-line {
   display: flex;
   align-items: center;
@@ -418,6 +421,7 @@ img {
   margin-right: var(--list-gap);
   margin-bottom: var(--list-gap);
   background-color: var(--white);
+  border: 1px solid #eeeeee;
 }
 
 .serv-list :nth-child(3n) {
