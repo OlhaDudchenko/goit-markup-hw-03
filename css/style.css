@@ -131,9 +131,14 @@ img {
   align-items: center;
   margin-left: auto;
 }
-.list-cont .item + .item {
-  margin-left: 50px;
+
+.list-cont .item:not(:last-child) {
+  margin-right: 50px;
 }
+/* АЛЬТЕРНАТИВА */
+/* .list-cont .item + .item {
+  margin-left: 50px;
+} */
 
 .list-cont .mail,
 .list-cont .tel {
