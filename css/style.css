@@ -293,7 +293,7 @@ img {
 .team-card {
   text-align: center;
   /* outline: 1px solid yellow; */
-  width: calc((100%-90px) / 4);
+  width: calc((100% - 90px) / 4);
   margin-right: var(--list-gap);
   padding-bottom: var(--list-gap);
   background-color: var(--white);
