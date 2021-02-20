@@ -40,8 +40,8 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   /* outline: 1px solid tomato;
   background-color: indianred; */
 }
@@ -226,7 +226,7 @@ img {
 .features-list > .features-card {
   /* outline: 1px solid yellow; */
   width: calc((100% - 90px) / 4);
-  margin-right: 30px;
+  margin-right: var(--list-gap);
 }
 .features-list :nth-child(4) {
   margin-right: 0px;
@@ -244,7 +244,7 @@ img {
 .services-list > .services-card {
   /* outline: 1px solid yellow; */
   width: calc((100% - 60px) / 3);
-  margin-right: 30px;
+  margin-right: var(--list-gap);
 }
 
 .services-list :nth-child(3) {
@@ -294,8 +294,8 @@ img {
   text-align: center;
   /* outline: 1px solid yellow; */
   width: calc((100% - 90px) / 4);
-  margin-right: 30px;
-  padding-bottom: 30px;
+  margin-right: var(--list-gap);
+  padding-bottom: var(--list-gap);
   background-color: var(--white);
 }
 
@@ -423,8 +423,8 @@ img {
 .serv-card {
   /* outline: 1px solid yellow; */
   width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin-right: var(--list-gap);
+  margin-bottom: var(--list-gap);
   background-color: var(--white);
   border: 1px solid #eeeeee;
 }
