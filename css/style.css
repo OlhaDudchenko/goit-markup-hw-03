@@ -30,6 +30,7 @@ body {
   background-color: var(--white);
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
+  background-color: fuchsia;
 }
 img {
   display: block;
@@ -40,8 +41,8 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* margin-left: auto;
-  margin-right: auto; */
+  margin-left: auto;
+  margin-right: auto;
   /* outline: 1px solid tomato;
   background-color: indianred; */
 }
